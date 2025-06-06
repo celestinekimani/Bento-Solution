@@ -1,0 +1,239 @@
+
+@media (max-width: 768px) {
+  .overall {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+  }
+
+  .header, .left, .bottom-left, .accounts, .audience, .schedule, .grow, .social-media-schedule {
+    grid-column: auto;
+    grid-row: auto;
+  }
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:white;
+}
+
+main {
+    width: 100%;
+    max-width: 1200px;
+    padding: 20px;
+}
+
+.overall{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 equal columns */
+    grid-template-rows: auto auto auto auto; /* Adjust rows to fit content */
+    gap: 20px;
+    width: 100%;
+    max-width: 1200px;
+    box-sizing: border-box;
+}
+
+.header,
+.left,
+.bottom-left,
+.accounts,
+.audience,
+.schedule,
+.grow,
+.social-media-schedule {
+    border-radius: 15px; /* Increased for smoother corners */
+    box-sizing: border-box;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
+}
+
+/* Left Section: Create and Schedule */
+.left {
+    background-color: #FFF3E0; /* Light yellow from the image */
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+}
+
+.left h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.color {
+    color: goldenrod; /* Yellow highlight for "quicker" */
+}
+
+.left img {
+    max-width: 100%;
+    display: block;
+    border-radius: 10px;
+}
+
+/* Header Section: Social Media 10X Faster */
+.header {
+    background-color: #6B48FF; /* Purple */
+    grid-column: 2 / 4; /* Span 2 columns */
+    grid-row: 1 / 2;
+    color: white;
+    text-align: center;
+}
+
+.header h1 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.x {
+    color:goldenrod; /* Yellow highlight for "10X" */
+}
+
+.header img {
+    width: 100px;
+    height: auto;
+    margin: 10px auto;
+    display: block;
+}
+
+.header p {
+    font-size: 14px;
+}
+
+/* Social Media Schedule Section */
+.social-media-schedule {
+    background-color: #E8E4FF; /* Light purple */
+    grid-column: 4 / 5;
+    grid-row: 1 / 3; /* Span 2 rows */
+}
+
+.social-media-schedule h1 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.social-media-schedule img {
+    max-width: 100%;
+    display: block;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.social-media-schedule p {
+    font-size: 14px;
+}
+
+/* Accounts Section: Manage Multiple Platforms */
+.accounts {
+    background-color: whitesmoke;
+    grid-column: 2;
+    grid-row: 2 ;
+    text-align: center;
+}
+
+.accounts img {
+    max-width: 100%;
+    display: block;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.accounts h2 {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* Schedule Section: Maintain Consistent Schedule */
+.schedule {
+    background-color: goldenrod; /* Yellow */
+    grid-column: 3 / 4;
+    grid-row: 2 / 3;
+}
+
+.schedule h2 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.schedule img {
+    max-width: 100%;
+    display: block;
+    border-radius: 10px;
+}
+
+/* Bottom Left Section: Write Content Using AI */
+.bottom-left {
+    background-color: goldenrod; /* Light yellow */
+    grid-column: 1;
+    grid-row: 2 / 4; /* Span 2 rows */
+}
+
+.bottom-left h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.bottom-left img {
+    max-width: 100%;
+    display: block;
+    border-radius: 10px;
+}
+
+/* Audience Section: 56% Audience Growth */
+.audience {
+    background-color: whitesmoke;
+    grid-column: 2;
+    grid-row: 3;
+    text-align: center;
+}
+
+.audience p {
+    font-size: 14px;
+}
+
+.audience span {
+    font-size: 36px;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.audience img {
+    max-width: 100%;
+    display: block;
+    border-radius: 10px;
+    margin-top: 15px;
+}
+
+/* Grow Section: Grow Followers */
+.grow {
+    background-color: #6B48FF; /* Purple */
+    grid-column: 3 / 5; /* Span 2 columns */
+    grid-row: 3;
+    color: white;
+}
+
+.grow img {
+    max-width: 100%;
+    display: block;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.grow h2 {
+    font-size: 24px;
+    font-weight: bold;
+}
