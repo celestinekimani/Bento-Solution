@@ -1,7 +1,7 @@
 
 @media (max-width: 768px) {
   .overall {
-    grid-template-columns: 1fr;
+    grid-template-columns: 2fr;
     grid-template-rows: auto;
   }
 
